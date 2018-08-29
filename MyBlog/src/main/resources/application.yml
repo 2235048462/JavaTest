@@ -1,0 +1,23 @@
+spring:
+  ###配置数据源####
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog
+    username: root
+    password: yuxudong
+  ###配置Thymeleaf模板###
+  thymeleaf:
+    cache: false
+    check-template: true
+    servlet:
+      content-type: text/html
+    enabled: true
+    mode: LEGACYHTML5
+
+#配置.xml路径
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+#配置模型路径
+  type-aliases-package: com.yuxudong.bolg.model
+
+

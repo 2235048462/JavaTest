@@ -1,0 +1,19 @@
+#head-photo{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.intag{
+    background-color: #66acd7;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+#head-photo-div{
+    width: 100px;
+    height: 100px;
+}
+.detail{
+    text-align: left;
+    padding-left: 20px;
+    width: 150%;
+}

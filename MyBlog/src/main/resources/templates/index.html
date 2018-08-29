@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>余旭东的博客</title>
+  <link rel="stylesheet" data-th-href="@{/bootstrap/css/bootstrap.css}">
+  <link rel="stylesheet" data-th-href="@{/css/index.css}">
+  <link rel="stylesheet" data-th-href="@{/css/style.css}">
+</head>
+<body data-th-align="center">
+<!-- 导航栏 -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="text-align: center;">
+  <div style="display: inline-block;float: none;width: 60%;">
+    <div class="col-md-8">
+      <ul class="nav navbar-nav" >
+        <li><a href="#"><span class="glyphicon glyphicon-home nav-span" style = "font-size:16px;">首页</span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-th-list"  style = "font-size:16px;">分类</span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-pencil" style = "font-size:16px;">留言</span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-list-alt" style = "font-size:16px;">归档</span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user" style = "font-size:16px;">关于我</span></a></li>
+      </ul>
+    </div>
+    <!-- 搜索 -->
+    <div class="col-md-4">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="row">
+  <main class="col-md-8 main-content">
+    <article class="post">
+      <div class="post-content">
+        <div class="post-head home-post-head">
+          <h1 class="post-title">
+            <a href="http://itmuch.com/spring-cloud/eureka-2-news/">关于Eureka 2.x，别再人云亦云了！</a>
+          </h1>
+          <div class="post-meta">  •
+            <time class="post-date" datetime="" title="">
+              2018年07月11日
+            </time>
+          </div>
+        </div>
+        <p class="brief">
+
+          最近朋友圈被Eureka 2.x停止开发的新闻刷屏，例如：
+
+          Eureka 2.0 开源工作宣告停止，继续使用风险自负
+          凉凉了，Eureka 宣布闭源，Spring Cloud 何去何从？
+
+          关于第二篇，我想说，这是在造谣。…
+
+        </p>
+      </div>
+
+      <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+          <div class="post-meta">
+            <span class="categories-meta fa-wrap">
+              <i class="glyphicon glyphicon-folder-open"></i>
+              <a href="http://itmuch.com/categories/Spring%20Cloud">
+                Spring Cloud
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <div class="post-permalink">
+          <a href="http://itmuch.com/spring-cloud/eureka-2-news/" class="btn btn-default">阅读全文</a>
+        </div>
+      </footer>
+
+    </article>
+
+  </main>
+
+  <aside class="col-md-4 sidebar">
+
+    <!-- 个人简介start -->
+    <div class="widget" style="height: 200px;">
+      <h3 class="title">个人资料</h3>
+      <div id="head-photo-div" class="col-md-6">
+        <img id="head-photo" data-th-src="@{/image/虎头头像.jpg}">
+      </div>
+      <div style="padding-left: 10px" class="col-md-6">
+        <div class="detail">
+          <p style="font-size: 15px;"><span class="intag"><b>博 主：</b></span>
+            <span>&nbsp;余旭东</span></p>
+        <span>余旭东个人博客，是一个记录自己成长过程、互联网技术的独立博客。</span>
+        </div>
+      </div>
+
+    </div>
+    <!-- 个人简介end -->
+  </aside>
+</div>
+
+<!-- JavaScript -->
+<script data-th-src="@{/js/common/jquery-3.3.1.min.js}"></script>
+<script data-th-src="@{/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>
