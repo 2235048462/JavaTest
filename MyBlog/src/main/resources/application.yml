@@ -8,10 +8,8 @@ spring:
   ###配置Thymeleaf模板###
   thymeleaf:
     cache: false
-    check-template: true
     servlet:
       content-type: text/html
-    enabled: true
     mode: LEGACYHTML5
 
 #配置.xml路径

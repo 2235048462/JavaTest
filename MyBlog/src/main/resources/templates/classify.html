@@ -3,10 +3,12 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>余旭东的博客</title>
+  <title>分类</title>
   <link rel="stylesheet" data-th-href="@{/bootstrap/css/bootstrap.css}">
   <link rel="stylesheet" data-th-href="@{/css/index.css}">
   <link rel="stylesheet" data-th-href="@{/css/style.css}">
+  <link rel="stylesheet" data-th-href="@{/css/classify.css}">
+
 </head>
 <body data-th-align="center">
 <!-- 导航栏 -->
@@ -44,46 +46,11 @@
 <div class="row">
   <main class="col-md-8 main-content">
     <article class="post">
-      <div class="post-content">
-        <div class="post-head home-post-head">
-          <h1 class="post-title">
-            <a href="http://itmuch.com/spring-cloud/eureka-2-news/">关于Eureka 2.x，别再人云亦云了！</a>
-          </h1>
-          <div class="post-meta">  •
-            <time class="post-date" datetime="" title="">
-              2018年07月11日
-            </time>
-          </div>
-        </div>
-        <p class="brief">
-
-          最近朋友圈被Eureka 2.x停止开发的新闻刷屏，例如：
-
-          Eureka 2.0 开源工作宣告停止，继续使用风险自负
-          凉凉了，Eureka 宣布闭源，Spring Cloud 何去何从？
-
-          关于第二篇，我想说，这是在造谣。…
-
-        </p>
-      </div>
-
-      <footer class="post-footer clearfix">
-        <div class="pull-left tag-list">
-          <div class="post-meta">
-            <span class="categories-meta fa-wrap">
-              <i class="glyphicon glyphicon-folder-open"></i>
-              <a href="http://itmuch.com/categories/Spring%20Cloud">
-                Spring Cloud
-              </a>
-            </span>
-          </div>
-        </div>
-
-        <div class="post-permalink">
-          <a href="http://itmuch.com/spring-cloud/eureka-2-news/" class="btn btn-default">阅读全文</a>
-        </div>
-      </footer>
-
+      <h1>共计<span data-th-text="${typeNum}">0</span>个分类</h1>
+      <hr/>
+      <ul id="type-list">
+        <li data-th-each="type: ${typeList}"><a data-th-text="${type}" href="#">Java</a></li>
+      </ul>
     </article>
 
   </main>
@@ -100,7 +67,7 @@
         <div class="detail">
           <p style="font-size: 15px;"><span class="intag"><b>博 主：</b></span>
             <span>&nbsp;余旭东</span></p>
-        <span>余旭东个人博客，是一个记录自己成长过程、互联网技术的独立博客。</span>
+          <span>余旭东个人博客，是一个记录自己成长过程、互联网技术的独立博客。</span>
         </div>
       </div>
 
@@ -108,10 +75,7 @@
     <!-- 个人简介end -->
   </aside>
 </div>
-
-<!-- JavaScript -->
 <script data-th-src="@{/js/common/jquery-3.3.1.min.js}"></script>
 <script data-th-src="@{/bootstrap/js/bootstrap.min.js}"></script>
-<script data-th-src="@{/js/index.js}"></script>
 </body>
 </html>

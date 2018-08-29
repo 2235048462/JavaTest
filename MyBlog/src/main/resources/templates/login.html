@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" data-th-href="@{/bootstrap/css/bootstrap.css}">
+  <link rel="stylesheet" data-th-href="@{/css/login.css}">
+
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登录</title>
+</head>
+<body>
+
+<div>
+  <div class="be-content pren">
+
+    <div class="ioc_text">
+      <h2>登录</h2>
+    </div>
+
+    <div>
+        <div class="br-content">
+
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input type="text" class="form-control" placeholder="username" name="username" id="username" required="required">
+          </div>
+          <br>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input type="password" class="form-control" placeholder="password" name="username" id="password" required="required">
+          </div>
+
+          <div class="br-text">
+            <p>
+              <span>忘记密码?</span>
+              <a href="http://www.17sucai.com/preview/844720/2018-08-02/login/demo.html">找回</a>
+            </p>
+          </div>
+          <div style="padding-top: 10px">
+            <button class="btn" onclick="checkUser()">登录</button>
+          </div>
+          <div class="be-con">
+            <span>Copyright © 2018 - 2019 <a href="http://www.17sucai.com/preview/844720/2018-08-02/login/demo.html">系统登陆</a></span>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script type="text/javascript" data-th-src="@{/js/common/jquery-3.3.1.min.js}"></script>
+<script data-th-src="@{/js/login.js}"></script>
+</body>
+</html>
